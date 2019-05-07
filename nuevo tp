@@ -64,14 +64,14 @@ main()
 				break;
 			case 3: //stock
 				printf("Los productos \n");
-				printf("Nombre de producto \t Cantidad\n");
+				printf("Codigo\t\tNombre\t\tCantidad\t\tprecio\n");
 				for(i=1;i<=5;i++)
 				{								
-					printf("%s \t\t %i\n",n_de_producto[i],cantidad_producto[i]);	
+					printf("%i\t\t%s\t\t %i\n",i,n_de_producto[i],cantidad_producto[i],precio_producto[i]);	
 				}				
 				getch();
 				system("cls");
-				break;					
+				break;				
 				
 		}//cierra switch
 		total=total+venta;
